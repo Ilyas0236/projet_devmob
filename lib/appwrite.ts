@@ -1,4 +1,4 @@
-import {Account, Avatars, Client} from "appwrite";
+import {Account, Avatars, Client} from "react-native-appwrite";
 
 export const config = {
     platform: "com.jsm.restate",
