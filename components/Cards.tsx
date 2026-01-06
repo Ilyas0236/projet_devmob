@@ -22,6 +22,14 @@ export const FeaturedCard = ({onPress }:Props) => {
                  4.4
              </Text>
          </View>
+
+         <View className="flex flex-col items-start absolute bottom-5 insext-x-5">
+             <Text className="text-xl font-rubik-extrabold text-white" numberOfLines={1} >Modern Apartment</Text>
+             <Text className="text-base font-rubik text-white">
+                 BD SMARA AIN CHOCK CASABLANCA
+             </Text>
+
+         </View>
      </TouchableOpacity>
     )
 }
