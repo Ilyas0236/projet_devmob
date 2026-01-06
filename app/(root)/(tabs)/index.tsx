@@ -2,6 +2,8 @@ import {Image, SafeAreaView, Text, TouchableOpacity, View} from "react-native";
 import {Link} from "expo-router";
 import images from "@/constants/images";
 import icons from "@/constants/icons";
+import Search from "@/components/Search";
+import FeaturedCard, {Card} from "@/components/Cards";
 
 export default function Index() {
   return (
@@ -24,6 +26,24 @@ export default function Index() {
                   </View>
 
               </View>
+
+          </View>
+          <Search />
+          <View className="my-5">
+              <View className="flex flex-row items-center justify-between">
+                  <Text className="text-xl font-rubik-bold text-black-300">
+                      Featured
+                  </Text>
+                  <TouchableOpacity>
+                      <Text className="text-base font-rubik-bold text-primary-300">
+                          See all
+                      </Text>
+                  </TouchableOpacity>
+              </View>
+
+              <FeaturedCard/>
+              <Card/>
+
 
           </View>
 
